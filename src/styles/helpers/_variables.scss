@@ -1,0 +1,74 @@
+// Fonts
+$font-size-root: 16px !default;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg: 1.25rem !default;
+$font-size-sm: .875rem !default;
+$font-size-xs: .75rem !default;
+
+$line-height-base: 1.5 !default;
+
+// Body
+$body-bg: $color-white !default;
+$body-color: $color-neutral-dark !default;
+
+// Layout
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024,
+  xl: 1200px
+) !default;
+$container-max-widths: (
+  sm: 320px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+// Grid columns
+// Set the number of columns and specify the width of the gutters.
+$grid-columns: 12 !default;
+$grid-gutter-width-base: 30px !default;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+) !default;
+
+$media-xs: 320px;
+$media-sm: 640px;
+$media-md: 768px;
+$media-lg: 1024px;
+
+// Links
+$link-color: $color-primary-1-normal !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: none !default;
+
+// Headers
+$headings-margin-bottom: 0.5rem !default;
+$headings-font-family: $font-family-sans-serif !default;
+$headings-font-weight: 700 !default;
+$headings-line-height: 1 !default;
+$headings-color: $color-neutral-normal !default;
+
+$font-size-h1: 4rem !default;
+$font-size-h2: 3rem !default;
+$font-size-h3: 2rem !default;
+$font-size-h4: 1rem !default;
+$font-size-h5: 0.75rem !default;
+$font-size-h6: 0.50rem !default;
+
+// Misc
+$abbr-border-color: $color-neutral-light !default;
+$dt-font-weight: bold !default;
+$enable-hover-media-query: false !default;

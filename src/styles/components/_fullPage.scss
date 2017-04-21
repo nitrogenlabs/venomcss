@@ -1,0 +1,10 @@
+.fullPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  .fullPage_container {
+    padding: 35px;
+  }
+}
