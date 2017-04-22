@@ -9,18 +9,18 @@ let config = {
   },
 
   filenames: {
-    entry: 'app.js',
-    index: 'index.html',
-    icons: 'icons.svg',
-    scss: 'core.scss'
+    min: 'venom-min.scss',
+    scss: 'venom.scss'
   },
 
   directories: {
     src: 'src',
-    dist: 'dist',
-    development: 'dist/dev',
-    test: 'test'
-  }
+    dist: 'dist'
+  },
+  license: `/*!
+  venom.css v${appPackage.version} | MIT License | ${appPackage.repository.url}
+  normalize.css v${(appPackage.devDependencies['normalize.css']).replace('^', '')} | MIT License | github.com/necolas/normalize.css
+  */`
 };
 
 // Utilities
@@ -36,7 +36,8 @@ config.path = {
         config.relative(config.directories.src, 'styles/**/*.scss')
       ],
       includes: []
-    }
+    },
+    normalize: config.relative('node_modules/normalize.css/normalize.css')
   },
 
   dist: {
@@ -65,7 +66,7 @@ config.autoprefixer = [
   'last 5 Chrome versions',
   'last 5 Firefox versions',
   'last 2 Safari versions',
-  'Explorer >= 10'
+  'Explorer >= 11'
 ];
 
 export default config;

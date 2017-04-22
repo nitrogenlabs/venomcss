@@ -1,16 +1,6 @@
 // Hover
 @mixin hover {
-  // TODO: re-enable along with mq4-hover-shim
-  //  @if $enable-hover-media-query {
-  //    // See Media Queries Level 4: https://drafts.csswg.org/mediaqueries/#hover
-  //    // Currently shimmed by https://github.com/twbs/mq4-hover-shim
-  //    @media (hover: hover) {
-  //      &:hover { @content }
-  //    }
-  //  }
-  //  @else {
   &:hover { @content }
-  //  }
 }
 
 @mixin hover-focus {
@@ -62,9 +52,6 @@
 
 // Tabs
 @mixin tab-focus() {
-  // WebKit-specific. Other browsers will keep their default outline style.
-  // (Initially tried to also force default via `outline: initial`,
-  // but that seems to erroneously remove the outline in Firefox altogether.)
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
