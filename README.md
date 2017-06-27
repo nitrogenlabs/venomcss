@@ -23,7 +23,7 @@ variables.
 
 ## Normalize.css
 For improved cross-browser rendering, we use [Normalize.css]("http://necolas.github.io/normalize.css/"), a project by 
-[Nicolas Gallagher]("https://github.com/necolas") and [Jonathan Neal]("https://github.com/jonathantneal"].
+[Nicolas Gallagher]("https://github.com/necolas") and [Jonathan Neal]("https://github.com/jonathantneal").
 
 ## Container
 #### .container
