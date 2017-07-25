@@ -9,7 +9,7 @@ let config = {
   },
 
   filenames: {
-    min: 'venom-min.scss',
+    min: 'venom-min.css',
     scss: 'venom.scss'
   },
 
